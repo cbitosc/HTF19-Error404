@@ -65,11 +65,11 @@
       <div id="name_error" class="val_error"></div>
         </div>
     <div>
-    <input type="password" name="password" placeholder="please enter password..."><br><br>
-        <div id="password_error" class="val_error"></div>
+    <input type="password" name="pass" placeholder="please enter password..."><br><br>
+        <div id="pass_error" class="val_error"></div>
         </div>
         <div>
-    <input type="text" name="phoneno" placeholder="please enter phoneno..."><br><br>
+    <input type="text" name="phone" placeholder="please enter phoneno..."><br><br>
         <div id="phone_error" class="val_error"></div>
         </div>
        
@@ -82,13 +82,13 @@
 <script type="text/javascript">
  
     var user=document.forms["vform"]["user"];
-    var password=document.forms["vform"]["password"];
+    var pass=document.forms["vform"]["pass"];
    
     var name_error =document.getElementById("name_error");
-    var password_error=document.getElementById("password_error");
+    var pass_error=document.getElementById("pass_error");
    
     user.addEventListener("blur",nameVerify,true);
-    password.addEventListener("blur",passwordVerify,true);
+    pass.addEventListener("blur",passVerify,true);
    
    
     function validate()
@@ -98,9 +98,9 @@
             user.focus();
             return false;
         }
-         if(password.value==""){
-            password_error.textContent="password is required";
-            password.focus();
+         if(pass.value==""){
+            pass_error.textContent="password is required";
+            pass.focus();
              return false;
         }
     }
@@ -115,12 +115,12 @@
             }
        
     }
-    function passwordVerify()
+    function passVerify()
     {
         if(pass.value!="")
             {
                  pass.style.border="1px solid red";
-                password_error.innerHTML="";
+                pass_error.innerHTML="";
                 return true;
             }
     }

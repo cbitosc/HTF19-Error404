@@ -15,11 +15,11 @@
             margin-top: 40px;
             padding-top:10px;
             padding-left: 50px;
-            border-radius: 15px;
-            -webkit-border-radius:15px;
+            border-radius: 50px;
+            -webkit-border-radius:50px;
             -o-border-radius:15px;
             -moz-border-radius:15px;
-            color:white;
+            color:red;
             font-weight:border;
          }
 
@@ -53,11 +53,15 @@
     </style>
 </head>
 <body>
+    
   <div class="aa">
+      <img src="https://tinhouse.com/wp-content/uploads/2013/10/brain-questions.jpg" position=middle width=35 height=35 allign="center">
    <h2>Login</h2>
+      
    <form method="post" action="validone.php" >
+       
     <input type="text" name="user" placeholder="please Enter username.."><br><br>
-    <input type="password" name="password" placeholder="please enter password..."><br><br>
+    <input type="password" name="pass" placeholder="please enter password..."><br><br>
     not registered yet?:<a href="register.php">register now!</a><br><br>
     <input type="submit" value="Login">
    </form>
