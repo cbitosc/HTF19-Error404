@@ -26,7 +26,7 @@
         .aa input[type="text"]
         {
             width:200px;
-            height:35px;
+            height:25px;
             border=0;
             border-radius: 5px;
             -webkit-border-radius:5px;
@@ -38,7 +38,7 @@
         .aa input[type="password"]
         {
             width:200px;
-            height:35px;
+            height:25px;
             border=0;
             border-radius: 5px;
             -webkit-border-radius:5px;
